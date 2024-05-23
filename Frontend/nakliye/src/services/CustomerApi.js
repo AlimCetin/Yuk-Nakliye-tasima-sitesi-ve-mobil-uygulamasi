@@ -14,7 +14,7 @@ class CustomerApi {
     }
     // CREATE
     // @PostMapping("/create")
-    customerFoodCreate(customerDto) {
+    customerRouteCreate(customerDto) {
         return axios.post(`${PERSIST_URL}/create`, customerDto, {
             method: 'POST',
             headers: {
@@ -23,11 +23,7 @@ class CustomerApi {
             body: JSON.stringify(customerDto),
         })
     }
-    // DELETE BY ID
-    // @DeleteMapping("/delete/{id}")
-    customerDeleteById(id) {
-        return axios.delete(`${PERSIST_URL}/delete/${id}`)
-    }
+
 } //end class
 
 export default  new CustomerApi()

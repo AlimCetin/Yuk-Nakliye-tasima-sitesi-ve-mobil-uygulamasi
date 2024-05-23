@@ -23,7 +23,7 @@ export default function Login() {
       Data=response.data[0];
       console.log(Data);
       if (response.status == 200) {
-        if (Data.durum == true) {
+        if (Data != null) {
           localStorage.setItem("id",Data.id);
           localStorage.setItem("userName", Data.userName);
           if (Data.userType == "Customer") {

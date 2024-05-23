@@ -25,13 +25,13 @@ import java.util.List;
 public class CarrierApiImpl implements ICarrierApi<CarrierDto> {
 
     // INJECTION
-    private final ICarrierServices iCompanyServices;
+    private final ICarrierServices iCarrierServices;
  
     //Create
     @Override
     @PostMapping("/create")
-    public ResponseEntity<?> carrierRuoteCreate(@Valid @RequestBody CarrierDto companyDto) {
-            return ResponseEntity.ok(iCompanyServices.carrierRuoteCreate(companyDto)) ;
+    public ResponseEntity<?> carrierRuoteCreate(@Valid @RequestBody CarrierDto carrierDtoDto) {
+            return ResponseEntity.ok(iCarrierServices.carrierRuoteCreate(carrierDtoDto)) ;
         }
 
 } //end class

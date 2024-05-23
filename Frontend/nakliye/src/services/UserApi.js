@@ -10,8 +10,8 @@ const PERSIST_URL = "http://localhost:8080/api/v1.0.0/users";
 class UserApi {
     // SEARCH  EMAIL
     //@GetMapping("/search")
-    userFindByEmail(userEmail) {
-        return  axios.get((`${PERSIST_URL}/search?userEmail=${userEmail}`));
+    userFindByEmail(userEmail,userPass) {
+        return  axios.get((`${PERSIST_URL}/search?userEmail=${userEmail},userPassword=${userPass}`));
     }
     // CREATE
     // @PostMapping("/create")
