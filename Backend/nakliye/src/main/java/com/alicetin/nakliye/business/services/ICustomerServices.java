@@ -4,7 +4,8 @@ import java.util.List;
 
 // D: Dto
 // E: Entity
-public interface ICustomerServices<D,E>{
+//F:CustFindCarrierDto
+public interface ICustomerServices<D,E,F>{
 
     // INJECTION
 
@@ -18,6 +19,6 @@ public interface ICustomerServices<D,E>{
 
 
     // FIND
-    public List<D> customerFindBycustomerId(Long customerId);
+    public List<F> customerFindBycustomerId(Long customerId);
 
 } //end interface

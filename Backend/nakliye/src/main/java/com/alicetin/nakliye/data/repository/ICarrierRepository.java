@@ -2,6 +2,7 @@ package com.alicetin.nakliye.data.repository;
 
 
 import com.alicetin.nakliye.data.entity.CarrierEntity;
+import com.alicetin.nakliye.data.entity.CustomerEntity;
 import com.alicetin.nakliye.data.entity.UserEntity;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
